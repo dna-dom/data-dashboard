@@ -1,9 +1,7 @@
 # data-dashboard
-# Deploy "docs" folder to GitHub Pages with a CNAME domain
+# Deploy "docs" folder to GitHub Pages
 
 name: Publish Website
-# Managing a custom domain for your GitHub Pages site:
-# https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
 
 on: [workflow_dispatch]
 
