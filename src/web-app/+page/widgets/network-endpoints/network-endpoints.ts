@@ -2,7 +2,7 @@
 // Widget controller
 
 // Imports
-import { dna } from 'dna-engine';
+import { dna } from 'dna-dom';
 
 // Types
 type WidgetModel = {

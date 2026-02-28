@@ -2,7 +2,7 @@
 // Controller
 
 // Imports
-import { dna, DnaCallback } from 'dna-engine';
+import { dna, DnaCallback } from 'dna-dom';
 import { fetchJson, FetchJsonLogger } from 'fetch-json';
 import { libX } from 'web-ignition';
 

@@ -2,7 +2,7 @@
 // Widget controller
 
 // Imports
-import { dna } from 'dna-engine';
+import { dna } from 'dna-dom';
 import { fetchJson } from 'fetch-json';
 import { prettyPrintJson } from 'pretty-print-json';
 
@@ -46,7 +46,7 @@ const webAppWidgetNetworkRestTool = {
       fetchJson.get(model.url).then(handleData).catch(handleError);
       },
    show(widgetElem: HTMLElement): void {
-      const defaultRestUrl = 'https://dna-engine.org/api/books/1/';
+      const defaultRestUrl = 'https://dna-dom.org/api/books/1/';
       const elem = {
          widget: widgetElem,
          input:  widgetElem.querySelector('input')!,

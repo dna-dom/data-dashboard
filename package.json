@@ -8,15 +8,15 @@
    "browser": "docs/index.html",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/dna-engine/data-dashboard.git"
+      "url": "git+https://github.com/dna-dom/data-dashboard.git"
    },
    "homepage": "https://data-dashboard.js.org",
-   "bugs": "https://github.com/dna-engine/data-dashboard/issues",
+   "bugs": "https://github.com/dna-dom/data-dashboard/issues",
    "keywords": [
       "charts",
       "dashboard",
       "data-dashboard",
-      "dna-engine",
+      "dna-dom",
       "html5",
       "javascript",
       "report",
@@ -35,7 +35,7 @@
    "recursiveExecConfig": {
       "commands": {
          "lessc": "lessc {{file}} build/2-dev/web-app/{{basename}}.css",
-         "rollup": "rollup {{file}} --file build/2-dev/web-app/{{filename}} --name {{nameCamelCase}} --format iife --globals chart.js:globalThis,dna-engine:globalThis,fetch-json:globalThis,pretty-print-json:globalThis,simple-datatables:globalThis,web-ignition:globalThis",
+         "rollup": "rollup {{file}} --file build/2-dev/web-app/{{filename}} --name {{nameCamelCase}} --format iife --globals chart.js:globalThis,dna-dom:globalThis,fetch-json:globalThis,pretty-print-json:globalThis,simple-datatables:globalThis,web-ignition:globalThis",
          "csso": "csso {{file}} --output    build/3-min/web-app/{{filename}}",
          "uglifyjs": "uglifyjs {{file}} --output build/3-min/web-app/{{filename}}"
       }
@@ -55,12 +55,12 @@
       "libraries": [
          "make-dir build/1-pre/libs",
          "csso node_modules/web-ignition/dist/reset.min.css                      --output build/1-pre/libs/reset.min.css",
-         "csso node_modules/dna-engine/dist/dna-engine.css                       --output build/1-pre/libs/dna-engine.css",
+         "csso node_modules/dna-dom/dist/dna-dom.css                       --output build/1-pre/libs/dna-dom.css",
          "csso node_modules/simple-datatables/dist/style.css                     --output build/1-pre/libs/simple-datatables.css",
          "csso node_modules/pretty-print-json/dist/css/pretty-print-json.min.css --output build/1-pre/libs/pretty-print-json.css",
          "replacer build/1-pre/libs --ext=.css build/2-dev/web-app --concat=libraries.css --header={{macro:css-header}}",
          "replacer  node_modules/chart.js/dist/chart.umd.js --no-source-map               build/1-pre/libs",
-         "copy-file node_modules/dna-engine/dist/dna-engine.min.js               --folder build/1-pre/libs",
+         "copy-file node_modules/dna-dom/dist/dna-dom.min.js               --folder build/1-pre/libs",
          "copy-file node_modules/fetch-json/dist/fetch-json.min.js               --folder build/1-pre/libs",
          "copy-file node_modules/pretty-print-json/dist/pretty-print-json.min.js --folder build/1-pre/libs",
          "copy-file node_modules/simple-datatables/dist/umd/simple-datatables.js --folder build/1-pre/libs",
@@ -122,7 +122,7 @@
       "open": "~11.0"
    },
    "devDependencies": {
-      "@eslint/js": "~9.39",
+      "@eslint/js": "~10.0",
       "@fortawesome/fontawesome-free": "~7.2",
       "@types/node": "~25.3",
       "add-dist-header": "~1.6",
@@ -133,8 +133,8 @@
       "copy-file-util": "~1.3",
       "copy-folder-util": "~1.2",
       "csso-cli": "~4.0",
-      "dna-engine": "~3.3",
-      "eslint": "~9.39",
+      "dna-dom": "~3.3",
+      "eslint": "~10.0",
       "img-src-placeholder": "~1.2",
       "jshint": "~2.13",
       "less": "~4.5",

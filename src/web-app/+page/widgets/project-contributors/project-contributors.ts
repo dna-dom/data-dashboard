@@ -2,7 +2,7 @@
 // Widget controller
 
 // Imports
-import { dna } from 'dna-engine';
+import { dna } from 'dna-dom';
 import { fetchJson } from 'fetch-json';
 
 // Modules
@@ -45,7 +45,7 @@ type RawData = WidgetModel['contributors'];
 
 const webAppWidgetProjectContributors = {
    show(widgetElem: Element): void {
-      const url = 'https://api.github.com/repos/dna-engine/dna-engine/contributors';
+      const url = 'https://api.github.com/repos/dna-dom/dna-dom/contributors';
       const handleData = (data: RawData) => {
          webAppUtil.spinnerStop(widgetElem);
          const model = <WidgetModel>dna.getModel(widgetElem);
