@@ -7,10 +7,10 @@ import { fetchJson } from 'fetch-json';
 import { DataTable } from 'simple-datatables';
 
 // Modules
-import { webAppLookup } from '../../modules/lookup';
-import { webAppUtil } from '../../modules/util';
+import { webAppLookup } from '../../modules/lookup.js';
+import { webAppUtil } from '../../modules/util.js';
 class DT extends DataTable {}
-declare namespace simpleDatatables { class DataTable extends DT {} }  //eslint-disable-line
+declare namespace simpleDatatables { class DataTable extends DT {} }  //eslint-disable-line @typescript-eslint/no-namespace
 
 // {
 //    root: {

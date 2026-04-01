@@ -7,10 +7,10 @@ import { fetchJson, FetchJsonLogger } from 'fetch-json';
 import { libX } from 'web-ignition';
 
 // Modules
-import { WebAppWidget } from './config';
-import { webAppLookup } from './lookup';
-import { webAppNetwork } from './util';
-import { webAppWidgets, WebAppWidgetsKey, WebAppWidgetCode } from './widgets';
+import { WebAppWidget } from './config.js';
+import { webAppLookup } from './lookup.js';
+import { webAppNetwork } from './util.js';
+import { webAppWidgets, WebAppWidgetsKey, WebAppWidgetCode } from './widgets.js';
 
 const webAppController = {
    // <main>

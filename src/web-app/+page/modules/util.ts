@@ -6,8 +6,8 @@ import { ChartConfiguration, ChartDataset } from 'chart.js';
 import { libX } from 'web-ignition';
 
 // Modules
-import { WebAppChartColor } from './config';
-import { webAppLookup } from './lookup';
+import { WebAppChartColor } from './config.js';
+import { webAppLookup } from './lookup.js';
 
 // Types
 export type WebAppSettingsNarrowScreenSaver = {

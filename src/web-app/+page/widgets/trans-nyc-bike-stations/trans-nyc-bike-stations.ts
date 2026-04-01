@@ -6,7 +6,7 @@ import { Chart, ChartConfiguration } from 'chart.js';
 import { fetchJson } from 'fetch-json';
 
 // Modules
-import { webAppUtil } from '../../modules/util';
+import { webAppUtil } from '../../modules/util.js';
 
 // {
 //    last_updated: 1546391115,

@@ -4,9 +4,9 @@
 
 // Imports
 import { browserReady } from 'puppeteer-browser-ready';
-import fs   from 'fs';
+import fs   from 'node:fs';
 import open from 'open';
-import path from 'path';
+import path from 'node:path';
 
 // Configuration
 const config = {

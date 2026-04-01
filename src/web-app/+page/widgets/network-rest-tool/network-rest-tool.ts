@@ -7,7 +7,7 @@ import { fetchJson } from 'fetch-json';
 import { prettyPrintJson } from 'pretty-print-json';
 
 // Modules
-import { webAppUtil } from '../../modules/util';
+import { webAppUtil } from '../../modules/util.js';
 
 // Types
 type WidgetModel = {

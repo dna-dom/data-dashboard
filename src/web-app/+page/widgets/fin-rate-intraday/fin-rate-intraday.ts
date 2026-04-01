@@ -6,7 +6,7 @@ import { Chart, ChartConfiguration, ChartDataset } from 'chart.js';
 import { fetchJson } from 'fetch-json';
 
 // Modules
-import { webAppUtil } from '../../modules/util';
+import { webAppUtil } from '../../modules/util.js';
 
 // {
 //    'Meta Data': {

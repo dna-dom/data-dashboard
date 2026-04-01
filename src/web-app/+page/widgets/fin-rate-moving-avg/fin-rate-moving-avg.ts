@@ -4,9 +4,9 @@
 import { Chart, ChartConfiguration, ChartDataset } from 'chart.js';
 import { fetchJson } from 'fetch-json';
 
-import { webAppUtil } from '../../modules/util';
-import { webAppLookup } from '../../modules/lookup';
-import { WebAppChartColor } from '../../modules/config';
+import { webAppUtil } from '../../modules/util.js';
+import { webAppLookup } from '../../modules/lookup.js';
+import { WebAppChartColor } from '../../modules/config.js';
 
 // {
 //    'Meta Data': {

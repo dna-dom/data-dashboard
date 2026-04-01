@@ -6,7 +6,7 @@ import { dna } from 'dna-dom';
 import { fetchJson } from 'fetch-json';
 
 // Modules
-import { webAppUtil } from '../../modules/util';
+import { webAppUtil } from '../../modules/util.js';
 
 // [
 //    {

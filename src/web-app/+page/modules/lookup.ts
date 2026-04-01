@@ -2,8 +2,8 @@
 // Lookup
 
 // Modules
-import { WebAppChartColorMap, WebAppPanelMap, WebAppWidgetMap } from '../../web-app';
-import { webAppConfig, WebAppPanel } from './config';
+import { WebAppChartColorMap, WebAppPanelMap, WebAppWidgetMap } from '../../web-app.js';
+import { webAppConfig, WebAppPanel } from './config.js';
 
 const webAppLookup = {
    widgets:     webAppConfig.widgets,
