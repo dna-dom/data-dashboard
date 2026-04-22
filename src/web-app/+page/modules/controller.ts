@@ -2,7 +2,7 @@
 // Controller
 
 // Imports
-import { dna, DnaCallback } from 'dna-dom';
+import { dna } from 'dna-dom';
 import { fetchJson, FetchJsonLogger } from 'fetch-json';
 import { libX } from 'web-ignition';
 
@@ -37,7 +37,7 @@ const webAppController = {
          if (!widget)
             throw new Error('[data-dashboard] ' + dna.util.printf(msg.missingWidget, panelElem.dataset.hash));
          widgetElem.querySelector('web-app-widget-body')?.remove();
-         widgetElem.appendChild(<Element>dna.clone(widget.code, {}));
+         widgetElem.appendChild(dna.clone(widget.code, {}));
          const webAppWidgetsKey = <WebAppWidgetsKey>dna.util.toCamel(widget.code);
          const widgetController = <WebAppWidgetCode | undefined>webAppWidgets[webAppWidgetsKey];
          if (!widgetController)
@@ -49,7 +49,7 @@ const webAppController = {
       },
    setup(): void {
       libX.ui.autoDisableButtons();
-      dna.registerInitializer(<DnaCallback>libX.bubbleHelp.setup);
+      dna.registerInitializer(libX.bubbleHelp.setup);
       fetchJson.enableLogger(<FetchJsonLogger>webAppNetwork.logEvent);
       webAppLookup.panels.forEach(panel =>
          panel.widgetList = panel.widgets.map(code => <WebAppWidget>(webAppLookup.widget[code])));
