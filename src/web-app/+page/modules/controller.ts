@@ -35,13 +35,13 @@ const webAppController = {
             missingController: 'Widget controller missing: %s',
             };
          if (!widget)
-            throw new Error('[data-dashboard] ' + dna.util.printf(msg.missingWidget, panelElem.dataset.hash));
+            throw new Error('[data-dashboard] ' + dna.str.printf(msg.missingWidget, panelElem.dataset.hash));
          widgetElem.querySelector('web-app-widget-body')?.remove();
          widgetElem.appendChild(dna.clone(widget.code, {}));
-         const webAppWidgetsKey = <WebAppWidgetsKey>dna.util.toCamel(widget.code);
+         const webAppWidgetsKey = <WebAppWidgetsKey>dna.str.toCamel(widget.code);
          const widgetController = <WebAppWidgetCode | undefined>webAppWidgets[webAppWidgetsKey];
          if (!widgetController)
-            throw new Error('[data-dashboard] ' + dna.util.printf(msg.missingController, widget.code));
+            throw new Error('[data-dashboard] ' + dna.str.printf(msg.missingController, widget.code));
          widgetController.show(<HTMLElement>widgetElem);
          };
       dna.dom.forEach(webAppWidgetsElem.children, showWidget);
